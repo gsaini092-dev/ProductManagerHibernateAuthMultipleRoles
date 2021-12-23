@@ -3,7 +3,7 @@
  
  
 ## Start MySql
-/usr/local/mysql/bin/mysql -u root -p Mysql@1990
+/usr/local/mysql/bin/mysql -u root -p
 
 ## CREATE TABLES
 ```
