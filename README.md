@@ -6,7 +6,7 @@
 /usr/local/mysql/bin/mysql -u root -p Mysql@1990
 
 ## CREATE TABLES
-
+```
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(45) NOT NULL,
@@ -41,10 +41,10 @@ CREATE TABLE `product` (
   `price` varchar(64) NOT NULL,
   PRIMARY KEY (`id`)
 );
-
+```
 
 #INSERT DATA INTO TABLES
-
+```
 INSERT INTO `roles` (`name`) VALUES ('USER');
 INSERT INTO `roles` (`name`) VALUES ('CREATOR');
 INSERT INTO `roles` (`name`) VALUES ('EDITOR');
@@ -65,10 +65,12 @@ INSERT INTO `users_roles` (`user_id`, `role_id`) VALUES (3, 3); -- user john has
 INSERT INTO `users_roles` (`user_id`, `role_id`) VALUES (4, 2); -- user namhm has role CREATOR
 INSERT INTO `users_roles` (`user_id`, `role_id`) VALUES (4, 3); -- user namhm has role EDITOR
 INSERT INTO `users_roles` (`user_id`, `role_id`) VALUES (5, 4); -- user admin has role ADMIN
+```
 
-
-# START THE SPRING BOOT APPLICATION AND ACCESS IN BROWSER AS
+## START THE SPRING BOOT APPLICATION AND ACCESS IN BROWSER AS
+```
 localhost:8080
+```
 
 NOTE: passwords of each user are same as usename
 
